@@ -3,5 +3,5 @@ reversedninja-cooldown: 150
 
 #Custom Name and Lore
 # Reversed Ninja 
-reversedninja-name: ''
+reversedninja-name: '&r&l&6Reversed Ninja'
 reversedninja-lore: ['&r&l&7Use this Item to Tepe your', '&r&l&7enemy towards you in 3 seconds', '&r&ccooldown&7: 2 minutes and 30 segundos', '', '&r&l&6store.ragepvp.club']
