@@ -1,0 +1,8 @@
+name: Reversed Ninja 
+main: items\Items
+api: 5.0.0 
+version: 1.0.0
+author: ClouderIDev 
+permissions: 
+  items.command: 
+    default: op
