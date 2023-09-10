@@ -45,15 +45,10 @@ class Items extends PluginBase implements Listener {
                 switch (strtolower($args[0])) {
                         case 'give':
                           $reversedNinja = VanillaItems::NETHER_STAR();
-                          $reversedNinja->setCustomName(TextFormat::colorize('&r&l&6Reversed Ninja'));
+                          $reversedNinja->setCustomName(TextFormat::colorize($this->getConfig()->get("reversedninja-name")));
                           $reversedNinja->setCount((int) 64);
                         
-                          $lore = [
-                              '&r&l&7jfjdjd',
-                              '',
-                              '',
-                              '&r&l&6store.ragepvp.club'
-                          ];
+                          $lore = $this->getConfig()->get("reversedninja-lore");
                           $reversedNinja->setLore(array_map(fn(string $lore) => TextFormat::colorize($lore), $lore));
                           $reversedNinja->getNamedTag()->setInt("reversedninja", 1);
                           if ($sender->getInventory()->canAddItem($reversedNinja)) {
